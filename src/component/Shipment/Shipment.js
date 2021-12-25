@@ -3,12 +3,12 @@ import { CategoriesContext } from '../../App';
 
 const Shipment = () => {
     
-    const [count, setCount] = useContext(CategoriesContext);
+    const [category, setCategory] = useContext(CategoriesContext);
     return (
         <div>
-            <h4>This is Shipment: {count}</h4>
+            <h4>This is Shipment: {category}</h4>
 
-            <button onClick={() => setCount(count+3) }>Click 3</button>
+            <button onClick={() => setCategory(category+3) }>Click 3</button>
         </div>
     );
 };
